@@ -1,6 +1,26 @@
 # SleepyCraft
 Config files and info from the SleepyCraft server. 
 
+### Server plugin info
+We're currently running the following plugins:
+
+- EssentialsX
+- EssentialsXSpawn
+- EssentialsXChat
+- LuckyPerms
+- Matrix
+- Modern-LWC
+- OpenInv
+- Staff+
+- SuperVanish
+- Worldedit
+- WorldGuard
+
+and the following supporting libraries:
+
+- Protocollib
+- PacketListenerAPI
+
 ### Current server info
 We're running Paper Build #610 for 1.13.2.
 
