@@ -21,6 +21,10 @@ and the following supporting libraries:
 - Protocollib
 - PacketListenerAPI
 
+with the following datapack:
+
+- Multiplayer Sleep
+
 ### Current server info
 We're running Paper Build #610 for 1.13.2.
 
