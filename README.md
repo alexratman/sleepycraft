@@ -1,5 +1,5 @@
 # SleepyCraft
-Config files and info from the SleepyCraft server. 
+Archived config files and info from the SleepyCraft server. 
 
 ### Server plugin info
 We're currently running the following plugins:
@@ -26,7 +26,7 @@ with the following datapack:
 - Multiplayer Sleep
 
 ### Current server info
-We're running Paper Build #610 for 1.13.2.
+We're running Paper Build #139 for 1.14.
 
 ## Making Changes
 If there's anything you think should be changed please drop an issue. I'll review them most weekends. Pull requests should only be used in the case of gamebreaking bugs which require an immediate fix which you feel comfortable providing. Please give a full explanation in your PR.
