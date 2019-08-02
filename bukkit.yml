@@ -17,21 +17,21 @@ settings:
   warn-on-overload: true
   permissions-file: permissions.yml
   update-folder: update
-  plugin-profiling: false
+  plugin-profiling: true
   connection-throttle: 4000
-  query-plugins: true
+  query-plugins: false
   deprecated-verbose: default
   shutdown-message: Server closed
 spawn-limits:
-  monsters: 140
-  animals: 20
-  water-animals: 30
-  ambient: 30
+  monsters: 70
+  animals: 15
+  water-animals: 15
+  ambient: 15
 chunk-gc:
-  period-in-ticks: 600
-  load-threshold: 0
+  period-in-ticks: 400
+  load-threshold: 300
 ticks-per:
   animal-spawns: 400
-  monster-spawns: 1
+  monster-spawns: 2
   autosave: 6000
 aliases: now-in-commands.yml
