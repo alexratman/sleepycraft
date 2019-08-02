@@ -157,7 +157,7 @@ world-settings:
       cooldown-when-full: true
       disable-move-event: false
     anti-xray:
-      enabled: true
+      enabled: false
       engine-mode: 1
       chunk-edge-mode: 2
       max-chunk-section-index: 3
