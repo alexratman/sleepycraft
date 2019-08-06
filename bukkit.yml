@@ -13,6 +13,7 @@
 
 
 settings:
+  minimum-api: none
   allow-end: true
   warn-on-overload: true
   permissions-file: permissions.yml
@@ -23,15 +24,15 @@ settings:
   deprecated-verbose: default
   shutdown-message: Server closed
 spawn-limits:
-  monsters: 70
-  animals: 15
-  water-animals: 15
-  ambient: 15
+  monsters: 35
+  animals: 8
+  water-animals: 4
+  ambient: 1
 chunk-gc:
   period-in-ticks: 400
   load-threshold: 300
 ticks-per:
-  animal-spawns: 400
-  monster-spawns: 2
+  animal-spawns: 300
+  monster-spawns: 16
   autosave: 6000
 aliases: now-in-commands.yml
