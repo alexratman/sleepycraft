@@ -79,7 +79,7 @@ world-settings:
   default:
     seed-outpost: 165745296
     verbose: true
-    hopper-amount: 1
+    hopper-amount: 2
     random-light-updates: false
     dragon-death-sound-radius: 0
     seed-village: 10387312
@@ -91,32 +91,33 @@ world-settings:
     seed-shipwreck: 165745295
     seed-ocean: 14357621
     seed-slime: 987234911
-    max-tnt-per-tick: 100
-    mob-spawn-range: 8
+    max-tnt-per-tick: 50
+    mob-spawn-range: 5
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000
-    arrow-despawn-rate: 1200
+    arrow-despawn-rate: 300
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100
     zombie-aggressive-towards-villager: true
     nerf-spawner-mobs: true
-    max-entity-collisions: 8
+    view-distance: 7
+    max-entity-collisions: 4
     entity-activation-range:
-      raiders: 48
-      animals: 28
-      monsters: 28
+      raiders: 32
+      animals: 26
+      monsters: 26
       misc: 12
-      water: 12
+      water: 4
       tick-inactive-villagers: false
     entity-tracking-range:
       players: 48
-      animals: 32
-      monsters: 32
-      misc: 32
-      other: 32
+      animals: 48
+      monsters: 48
+      misc: 24
+      other: 24
     ticks-per:
-      hopper-transfer: 8
-      hopper-check: 1
+      hopper-transfer: 16
+      hopper-check: 4
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
@@ -126,14 +127,17 @@ world-settings:
       sprint-multiplier: 0.1
       other-multiplier: 0.0
     max-tick-time:
-      tile: 50
-      entity: 50
+      tile: 10
+      entity: 40
     squid-spawn-range:
       min: 45.0
     merge-radius:
-      exp: 3.0
-      item: 2.5
+      exp: 6.0
+      item: 4.5
     growth:
+      bamboo-modifier: 100
+      sweetberry-modifier: 100
+      kelp-modifier: 100
       cactus-modifier: 100
       cane-modifier: 100
       melon-modifier: 100
@@ -156,25 +160,28 @@ world-settings:
     mob-spawn-range: 6
     enable-zombie-pigmen-portal-spawns: false
     item-despawn-rate: 6000
-    view-distance: 8
-    arrow-despawn-rate: 1200
+    view-distance: 5
+    arrow-despawn-rate: 100
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100
     nerf-spawner-mobs: true
-    max-entity-collisions: 8
+    max-entity-collisions: 2
     entity-activation-range:
-      animals: 28
-      monsters: 28
+      raiders: 8
+      animals: 26
+      monsters: 26
+      misc: 12
+      water: 4
       tick-inactive-villagers: false
     entity-tracking-range:
-      players: 48
-      animals: 32
+      players: 32
+      animals: 24
       monsters: 32
-      misc: 32
-      other: 32
+      misc: 16
+      other: 16
     ticks-per:
-      hopper-transfer: 16
-      hopper-check: 4
+      hopper-transfer: 32
+      hopper-check: 16
     hunger:
       jump-walk-exhaustion: 0.5
       jump-sprint-exhaustion: 0.5
@@ -184,11 +191,11 @@ world-settings:
       sprint-multiplier: 0.2
       other-multiplier: 0.0
     max-tick-time:
-      tile: 50
-      entity: 25
+      tile: 10
+      entity: 35
     merge-radius:
-      exp: 3.0
-      item: 2.5
+      exp: 8.0
+      item: 5.5
     growth:
       cactus-modifier: 1
       cane-modifier: 1
@@ -209,15 +216,15 @@ world-settings:
     random-light-updates: false
     dragon-death-sound-radius: 0
     max-tnt-per-tick: 10
-    mob-spawn-range: 10
+    mob-spawn-range: 6
     enable-zombie-pigmen-portal-spawns: false
     item-despawn-rate: 6000
-    view-distance: 8
-    arrow-despawn-rate: 600
+    view-distance: 7
+    arrow-despawn-rate: 20
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 250
-    nerf-spawner-mobs: false
-    max-entity-collisions: 8
+    nerf-spawner-mobs: true
+    max-entity-collisions: 4
     entity-activation-range:
       animals: 36
       monsters: 36
@@ -225,13 +232,13 @@ world-settings:
       tick-inactive-villagers: false
     entity-tracking-range:
       players: 48
-      animals: 32
-      monsters: 32
-      misc: 32
-      other: 32
+      animals: 48
+      monsters: 48
+      misc: 48
+      other: 64
     ticks-per:
-      hopper-transfer: 32
-      hopper-check: 16
+      hopper-transfer: 64
+      hopper-check: 32
     hunger:
       jump-walk-exhaustion: 0.5
       jump-sprint-exhaustion: 0.5
@@ -241,11 +248,11 @@ world-settings:
       sprint-multiplier: 0.2
       other-multiplier: 0.0
     max-tick-time:
-      tile: 50
+      tile: 10
       entity: 25
     merge-radius:
-      exp: 3.0
-      item: 2.5
+      exp: 8.0
+      item: 6.5
     growth:
       cactus-modifier: 1
       cane-modifier: 1
