@@ -11,7 +11,7 @@
 # Docs: https://paper.readthedocs.org/ 
 
 verbose: false
-config-version: 18
+config-version: 19
 settings:
   limit-player-interactions: true
   load-permissions-yml-before-plugins: true
@@ -59,11 +59,11 @@ timings:
   server-name: Unknown Server
   enabled: true
   verbose: true
-  server-name-privacy: false
+  server-name-privacy: true
   hidden-config-entries:
   - database
   - settings.bungeecord-addresses
-  history-interval: 300
+  history-interval: 600
   history-length: 36000
 world-settings:
   default:
@@ -76,7 +76,7 @@ world-settings:
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
     delay-chunk-unloads-by: 30s
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 10
     save-queue-limit-for-auto-save: 50
     remove-corrupt-tile-entities: false
     enable-treasure-maps: true
@@ -89,12 +89,12 @@ world-settings:
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
     max-entity-collisions: 6
-    disable-creeper-lingering-effect: false
+    disable-creeper-lingering-effect: true
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     keep-spawn-loaded: true
     skip-entity-ticking-in-chunks-scheduled-for-unload: true
-    armor-stands-do-collision-entity-lookups: true
+    armor-stands-do-collision-entity-lookups: false
     keep-spawn-loaded-range: 1
     auto-save-interval: -1
     disable-thunder: false
@@ -113,13 +113,14 @@ world-settings:
     creative-arrow-despawn-rate: -1
     parrots-are-unaffected-by-player-movement: false
     disable-explosion-knockback: false
-    armor-stands-tick: true
+    armor-stands-tick: false
     spawner-nerfed-mobs-should-jump: true
     baby-zombie-movement-speed: 0.5
     allow-leashing-undead-horse: false
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 16
     game-mechanics:
+      disable-relative-projectile-velocity: false
       villages-load-chunks: false
       scan-for-legacy-ender-dragon: true
       disable-chest-cat-detection: true
@@ -157,7 +158,7 @@ world-settings:
       cooldown-when-full: true
       disable-move-event: false
     anti-xray:
-      enabled: false
+      enabled: true
       engine-mode: 1
       chunk-edge-mode: 2
       max-chunk-section-index: 3
@@ -165,19 +166,78 @@ world-settings:
       hidden-blocks:
       - gold_ore
       - iron_ore
-      - coal_ore
       - lapis_ore
       - mossy_cobblestone
       - obsidian
       - chest
+      - trapped_chest
       - diamond_ore
       - redstone_ore
-      - lit_redstone_ore
-      - clay
       - emerald_ore
       - ender_chest
       replacement-blocks:
       - stone
-      - planks
     squid-spawn-height:
       maximum: 0.0
+  world_nether:
+    count-all-mobs-for-spawning: true
+    max-auto-save-chunks-per-tick: 4
+    save-queue-limit-for-auto-save: 50
+    remove-corrupt-tile-entities: true
+    enable-treasure-maps: false
+    prevent-moving-into-unloaded-chunks: true
+    max-entity-collisions: 3
+    keep-spawn-loaded: false
+    auto-save-interval: -1
+    disable-thunder: true
+    disable-ice-and-snow: true
+    container-update-tick-rate: 2
+    spawner-nerfed-mobs-should-jump: true
+    game-mechanics:
+      villages-load-chunks: false
+      scan-for-legacy-ender-dragon: true
+      disable-chest-cat-detection: true
+      disable-end-credits: true
+      disable-player-crits: false
+      disable-sprint-interruption-on-attack: false
+      shield-blocking-delay: 5
+      disable-unloaded-chunk-enderpearl-exploit: true
+    despawn-ranges:
+      soft: 24
+      hard: 48
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: true
+    anti-xray:
+      enabled: false
+  world_the_end:
+    count-all-mobs-for-spawning: true
+    max-auto-save-chunks-per-tick: 4
+    save-queue-limit-for-auto-save: 50
+    remove-corrupt-tile-entities: true
+    enable-treasure-maps: false
+    prevent-moving-into-unloaded-chunks: true
+    max-entity-collisions: 3
+    keep-spawn-loaded: false
+    auto-save-interval: -1
+    disable-thunder: true
+    disable-ice-and-snow: true
+    container-update-tick-rate: 2
+    spawner-nerfed-mobs-should-jump: true
+    game-mechanics:
+      villages-load-chunks: false
+      scan-for-legacy-ender-dragon: true
+      disable-chest-cat-detection: true
+      disable-end-credits: true
+      disable-player-crits: false
+      disable-sprint-interruption-on-attack: false
+      shield-blocking-delay: 5
+      disable-unloaded-chunk-enderpearl-exploit: true
+    despawn-ranges:
+      soft: 24
+      hard: 48
+    hopper:
+      cooldown-when-full: true
+      disable-move-event: true
+    anti-xray:
+      enabled: false
